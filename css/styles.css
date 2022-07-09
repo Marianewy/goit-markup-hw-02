@@ -5,7 +5,22 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
- --main-font-color: #212121
+
+ --main-font-color: #212121;
+
+ --logo-font: 
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    
+ --logo-font-color: #000000;
+  --secondary-color:#757575;
+ --accent-link-color: #2196F3;
+ --button-color: #F5F4FA;
+
 }
 
 
@@ -19,19 +34,21 @@ body {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
-
     color: var(--main-font-color);
 }
 /*link style*/
+
 .link {
    
     text-decoration: none;
     color: inherit;
 }
 
+.active {
+    color: var(--accent-link-color);
+}
 /*Header styles*/
-.header {
-    font-family: var(--main-font);
+.head-site {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -39,52 +56,57 @@ body {
 }
 
 .logo {
-    font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        
-    
-        letter-spacing: 0.03em;
-    
-        color: #2196F3;
+    font-family: var(--logo-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--accent-link-color);
 }
-.logo-1 {
-    font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-      
+.logo-st {
     
-        letter-spacing: 0.03em;
-    
-        color: #000000;
+    color: var(--logo-font-color);
 }
 
 .list {
     list-style-type: none;
 }
 
+.site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.site-nav:hover,
+.site-nav:focus {
+    color: var(--accent-link-color);
+}
 .contact {
     color: #757575;
 }
 
-/* .main {
-    font-family: var(--main-font);
+ .main {
+    /* font-family: var(--main-font); */
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
-        
     color: var(--main-font-color);
-} */
-.filter {
-    background: #F5F4FA;
 } 
-
+.filter {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: var(--button-color);
+    border-style: none;
+}
 
 /*Webstudio styles*/
 
