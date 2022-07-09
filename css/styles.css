@@ -1,11 +1,19 @@
 :root {
-
+ --main-font: 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+ --main-font-color: #212121
 }
+
+
 html {
     scroll-behavior: smooth;
 }
 
-/*
+
 body {
     font-family: var(--main-font);
     font-size: 16px;
@@ -14,16 +22,22 @@ body {
 
     color: var(--main-font-color);
 }
+/*link style*/
+.link {
+   
+    text-decoration: none;
+    color: inherit;
+}
 
+/*Header styles*/
 .header {
-font-family: 'Roboto';
-    font-style: normal;
+    font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.02em;
-    background: #FFFFFF;
+    
 }
+
 .logo {
     font-family: 'Raleway';
         font-style: normal;
@@ -48,23 +62,32 @@ font-family: 'Roboto';
     
         color: #000000;
 }
+
+.list {
+    list-style-type: none;
+}
+
 .contact {
     color: #757575;
 }
-.main {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-            letter-spacing: 0.03em;
+
+/* .main {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
         
-            color: #212121;
-}
+    color: var(--main-font-color);
+} */
 .filter {
     background: #F5F4FA;
-} */
+} 
 
-/*Header styles*/
 
+/*Webstudio styles*/
+
+.hero-heading {
+    text-transform: uppercase;
+}
